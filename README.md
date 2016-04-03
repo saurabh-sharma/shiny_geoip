@@ -1,12 +1,12 @@
 ShinyGeoip
 =====
 
-This API contains the sourcecode of the [geoip.nekudo.com](http://geoip.nekudo.com) website. It is an HTTP API to
+This API contains the sourcecode of the [saurabhsharma.me/geoip/](http://saurabhsharma.me/geoip/) website. It is an HTTP API to
 request location data for IP addresses. Responses can be in JSON or JSONP format.
 The API is based on the [Maxmind GeoLite2 Database](http://dev.maxmind.com/geoip/geoip2/geolite2/).
 
 ## Demo/Examples
-The live version of this API can be found at: [geoip.nekudo.com](http://geoip.nekudo.com)
+The live version of this API can be found at: [saurabhsharma.me/geoip/](http://saurabhsharma.me/geoip/)
 Here you will also find example requests.
  
 ## Requirements
