@@ -8,7 +8,7 @@ The API is based on the [Maxmind GeoLite2 Database](http://dev.maxmind.com/geoip
 ## Demo/Examples
 The live version of this API can be found at: [saurabhsharma.me/geoip/](http://saurabhsharma.me/geoip/)
 Here you will also find example requests.
- 
+
 ## Requirements
 To run your own instance of ShinyGeoip all you'll need is a webserver that supports PHP and URL rewriting.
 
@@ -19,8 +19,8 @@ To setup you own API follow the following steps:
 2. Run ```composer install``` to install required dependencies. If composer is not yet installed on your server please
 check [getcomposer.org](https://getcomposer.org/).
 3. Download a copy of the [GeoLite2 Database](http://dev.maxmind.com/geoip/geoip2/geolite2/) to the ```data``` folder.
-If you need to adjust this path you can do so in the ```www/index.php``` file.
-4. Point your webserver to the ```www``` folder and rewrite all requests to the index.php file.
+If you need to adjust this path you can do so in the ```index.php``` file.
+4. Rewrite all requests to the index.php file.
 
 You should now have your own instance up and running.
 
