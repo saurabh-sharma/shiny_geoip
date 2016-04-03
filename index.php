@@ -1,11 +1,11 @@
 <?php
-require_once '../vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 $app = new \Slim\Slim;
 $app->config('debug', false);
 
 // Set path to GeoLite city database:
-$app->pathCityDb = __DIR__ . '/../data/GeoLite2-City.mmdb';
+$app->pathCityDb = __DIR__ . '/data/GeoLite2-City.mmdb';
 
 // Set fallback language
 $app->defaultLang = 'en';
@@ -21,7 +21,7 @@ $app->get(
 
 // API routes
 $app->get(
-    '/api/full',
+    '/full',
     function () use ($app) {
         $ip =  $_SERVER['REMOTE_ADDR'];
         $options = ['full'];
@@ -30,7 +30,7 @@ $app->get(
     }
 );
 $app->get(
-    '/api(/(:ip))',
+    '/(:ip)',
     function ($ip = null, $options = []) use ($app) {
         $ip = ($ip === null) ? $_SERVER['REMOTE_ADDR'] : $ip;
         $apiRequestAction = new \ShinyGeoip\Action\ApiRequestAction($app);
@@ -42,7 +42,7 @@ $app->get(
     ]
 );
 $app->get(
-    '/api/:ip(/:options+)',
+    '/:ip(/:options+)',
     function ($ip, $options = []) use ($app) {
         $apiRequestAction = new \ShinyGeoip\Action\ApiRequestAction($app);
         $apiRequestAction->__invoke($ip, $options);

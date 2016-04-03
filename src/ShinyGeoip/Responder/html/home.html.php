@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free GeoIP/Geolocation REST API. An open-source project by nekudo.com.">
-    <title>Free IP GeoLocation/GeoIp API - geoip.nekudo.com</title>
-    <link rel="canonical" href="http://geoip.nekudo.com">
-    <link rel="stylesheet" href="/css/base.css">
+    <meta name="description" content="Free GeoIP/Geolocation REST API. An open-source project by saurabhsharma.me.">
+    <title>Free IP GeoLocation/GeoIp API - saurabhsharma.me/geoip/</title>
+    <link rel="canonical" href="http://saurabhsharma.me/geoip/">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
                 This project is open source. Setup your own instance if you like.
             </p>
             <p>
-                <a href="https://github.com/nekudo/shiny_geoip" class="btn">
+                <a href="https://github.com/saurabh-sharma/shiny_geoip" class="btn">
                     Sourcecode at GitHub
                 </a>
             </p>
@@ -85,7 +85,7 @@
         <p>
             All requests have to be HTTP GET requests in the following schema:
         </p>
-        <pre>http://geoip.nekudo.com/api/{ip}/{language}/{type}</pre>
+        <pre>http://saurabhsharma.me/geoip/{ip}/{language}/{type}</pre>
 
         <h4>Parameters</h4>
         <table>
@@ -120,10 +120,10 @@
         </p>
 
         <h4>Examples</h4>
-        <pre>http://geoip.nekudo.com/api/8.8.8.8</pre>
-        <pre>http://geoip.nekudo.com/api/2a00:a200:0:f::888</pre>
-        <pre>http://geoip.nekudo.com/api/8.8.8.8/full</pre>
-        <pre>http://geoip.nekudo.com/api/87.79.99.25/de</pre>
+        <pre>http://saurabhsharma.me/geoip/8.8.8.8</pre>
+        <pre>http://saurabhsharma.me/geoip/2a00:a200:0:f::888</pre>
+        <pre>http://saurabhsharma.me/geoip/8.8.8.8/full</pre>
+        <pre>http://saurabhsharma.me/geoip/87.79.99.25/de</pre>
         <pre>
 &lt;script&gt;
 function foo(data) {
@@ -133,10 +133,10 @@ function foo(data) {
     document.write(&quot;Longitude: &quot;, data.location.longitude);
 }
 &lt;/script&gt;
-&lt;script src=&quot;http://geoip.nekudo.com/api?callback=foo&quot;&gt;&lt;/script&gt;</pre>
+&lt;script src=&quot;http://saurabhsharma.me/geoip?callback=foo&quot;&gt;&lt;/script&gt;</pre>
 
-        <h4>SSL</h4>
-        <p class="textblock">This service is also available via <a href="https://geoip.nekudo.com">https</a>.</p>
+        <!-- <h4>SSL</h4>
+        <p class="textblock">This service is also available via <a href="https://saurabhsharma.me/geoip/">https</a>.</p> -->
 
         <h4>Limits</h4>
         <p class="textblock">The API follows a fair use policy. There are no limits by default but if the service is abused
@@ -148,7 +148,7 @@ function foo(data) {
             <small>
                 This product includes GeoLite2 data created by MaxMind, available from
                 <a href="http://www.maxmind.com">http://www.maxmind.com</a>.<br />
-                This website is another shiny project by <a href="https://nekudo.com">nekudo.com</a>.
+                This website is another shiny project by <a href="https://saurabhsharma.me">saurabhsharma.me</a>.
             </small>
         </p>
     </footer>
